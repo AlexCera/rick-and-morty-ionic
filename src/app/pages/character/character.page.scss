@@ -1,0 +1,14 @@
+.card-character {
+
+    ion-card-header {
+        padding: 0.2rem !important;
+        height: 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ion-card-subtitle {
+            text-align: center;
+        }
+    }
+}

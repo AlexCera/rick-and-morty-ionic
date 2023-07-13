@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Rick and Morty App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Rick and Morty App</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>About this series</ion-card-title>
+            <ion-card-subtitle></ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content class="ion-text-justify">
+            Rick and Morty is an American adult animated science-fiction sitcom created by Justin Roiland and Dan Harmon
+            for Cartoon Network's nighttime programming block Adult Swim. It is distributed internationally by Warner
+            Bros. Television Distribution.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12">
+        <ion-text class="ion-text-center" color="dark">
+          <h2>More</h2>
+        </ion-text>
+      </ion-col>
+
+      <ion-col size="4">
+        <ion-button (click)="navigate('character')" class="ion-text-center" color="success" expand="block"
+          shape="round">
+          Character
+        </ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button (click)="navigate('location')" class="ion-text-center" color="success" expand="block" shape="round">
+          Location
+        </ion-button>
+      </ion-col><ion-col size="4">
+        <ion-button (click)="navigate('episode')" class="ion-text-center" color="success" expand="block" shape="round">
+          Episode
+        </ion-button>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
